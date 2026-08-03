@@ -1,8 +1,6 @@
-require("config/keybinds")
-
-hl.monitor({
-	output = "...",
-	mode = "1920x1080@144",
-	position = "0x0",
-	scale = 1,
-})
+require("modules/keybinds")
+require("modules/binds")
+require("modules/core")
+require("modules/env")
+require("modules/monitors")
+require("modules/rules")
