@@ -1,3 +1,4 @@
+require("modules/autostart")
 require("modules/keybinds")
 require("modules/binds")
 require("modules/core")
