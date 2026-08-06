@@ -7,12 +7,10 @@ hl.bind("SUPER + R", hl.dsp.exec_cmd(menu))
 
 hl.bind("SUPER + Q", hl.dsp.window.close())
 
---TODO: Fix whatever annoying shit is happening here
---[[hl.bind("SUPER + K", hl.dsp.focus({ direction = u }))
-hl.bind("SUPER + J", hl.dsp.focus({ direction = d }))
-hl.bind("SUPER + H", hl.dsp.focus({ direction = r }))
-hl.bind("SUPER + L", hl.dsp.focus({ direction = l })) ]]
---
+hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
+hl.bind("SUPER + H", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + L", hl.dsp.focus({ direction = "left" }))
 for i = 1, 10 do -- automates workshop shifting from wrkshp 1 to 10
 	local key = (i % 10)
 	hl.bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
@@ -33,11 +31,3 @@ hl.bind("SUPER + V", hl.dsp.window.float({}))
 
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = maximized }))
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = fullscreen }))
-
-for i = 1, 10 do -- automates workshop shifting from wrkshp 1 to 10
-	local key = (i % 10)
-
-	hl.bind("SUPER +" .. key, function()
-		hl.dispatch(hl.dsp.window.move({ workspace = key }))
-	end)
-end
