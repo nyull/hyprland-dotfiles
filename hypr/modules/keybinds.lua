@@ -29,8 +29,9 @@ hl.bind("SUPER + SHIFT + J", hl.dsp.window.resize({ x = 0, y = -20, relative, tr
 hl.bind("SUPER + SHIFT + H", hl.dsp.window.resize({ x = -5, y = 0, relative, true }))
 hl.bind("SUPER + SHIFT + L", hl.dsp.window.resize({ x = 5, y = 0, relative, true }))
 hl.bind("SUPER + V", hl.dsp.window.float({}))
+hl.bind("SUPER + S", hl.dsp.layout("togglesplit"))
 
 --hl.bind("", hl.dsp)
 
 hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = maximized }))
-hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = fullscreen }))
+hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ mode = fullscreen }))
