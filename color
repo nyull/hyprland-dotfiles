@@ -1,0 +1,13 @@
+/* CSS HEX /
+ink-black: #00011Bff;
+bright-indigo: #0640E8ff;
+twilight-indigo: #172B57ff;
+soft-periwinkle: #A58CF3ff;
+blackberry-cream: #5F325Bff;
+
+/ SCSS RGB */
+ink-black: rgba(0, 1, 27, 1);
+bright-indigo: rgba(6, 64, 232, 1);
+twilight-indigo: rgba(23, 43, 87, 1);
+soft-periwinkle: rgba(165, 140, 243, 1);
+blackberry-cream: rgba(95, 50, 91, 1); 
