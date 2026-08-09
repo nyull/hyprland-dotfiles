@@ -1,8 +1,8 @@
 hl.config({
 	general = {
 		border_size = 1,
-		gaps_in = 1,
-		gaps_out = 3,
+		gaps_in = 2,
+		gaps_out = 2,
 		col = {
 			inactive_border = "rgba(0,0,0,1)",
 			active_border = { colors = { "rgba(225,225,225,1)", "rgba(0,0,0,1)" }, angle = 270 },
@@ -16,7 +16,7 @@ hl.config({
 		rounding = 3,
 		rounding_power = 2.0,
 		active_opacity = 1,
-		inactive_opacity = 0.70,
+		inactive_opacity = 0.95,
 	},
 
 	dwindle = {
@@ -33,3 +33,4 @@ hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 hl.curve("easy", { type = "spring", mass = 1, stiffness = 238.1191, dampening = 24.21279333 })
 
 hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "easeOutExpo" })
+hl.animation({ leaf = "windows", enabled = true, speed = 1, bezier = "linear" })
