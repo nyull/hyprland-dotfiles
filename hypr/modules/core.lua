@@ -33,4 +33,5 @@ hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 hl.curve("easy", { type = "spring", mass = 1, stiffness = 238.1191, dampening = 24.21279333 })
 
 hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "easeOutExpo" })
-hl.animation({ leaf = "windows", enabled = true, speed = 1, bezier = "linear" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "easeOutExpo", style = "slidevert" })
+hl.animation({ leaf = "windows", enabled = true, speed = 2, bezier = "linear", style = "slide" })
