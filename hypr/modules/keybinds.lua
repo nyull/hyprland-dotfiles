@@ -4,10 +4,10 @@ local menu = "rofi -show drun"
 
 -- NOTE: For debugging only, comment out otherwise
 hl.bind("SUPER + SHIFT + mouse:272", hl.dsp.exec_cmd(terminal))
-
 hl.bind("SUPER + E", hl.dsp.exec_cmd(filerer))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + R", hl.dsp.exec_cmd(menu))
+hl.bind("Print", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
 hl.bind("SUPER + Q", hl.dsp.window.close())
 
 hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
