@@ -18,20 +18,20 @@ for i = 1, 10 do -- automates workshop shifting from wrkshp 1 to 10
 	local key = (i % 10)
 	hl.bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
 	hl.bind("SUPER +" .. key, function()
-		hl.dispatch(hl.dsp.window.move({ workspace = i }))
+		hl.dispatch(hl.dsp.focus({ workspace = i }))
 	end)
 end
 
-hl.bind("mouse:272", hl.dsp.window.resize())
-hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
-hl.bind("SUPER + SHIFT + K", hl.dsp.window.resize({ x = 0, y = 20, relative, true }))
-hl.bind("SUPER + SHIFT + J", hl.dsp.window.resize({ x = 0, y = -20, relative, true }))
-hl.bind("SUPER + SHIFT + H", hl.dsp.window.resize({ x = -5, y = 0, relative, true }))
-hl.bind("SUPER + SHIFT + L", hl.dsp.window.resize({ x = 5, y = 0, relative, true }))
+hl.bind("SUPER + mouse:272", hl.dsp.window.resize())
+hl.bind("SUPER + mouse:273", hl.dsp.window.drag())
+hl.bind("SUPER + SHIFT + K", hl.dsp.window.resize({ x = 0, y = 35, relative = true }))
+hl.bind("SUPER + SHIFT + J", hl.dsp.window.resize({ x = 0, y = -35, relative = true }))
+hl.bind("SUPER + SHIFT + H", hl.dsp.window.resize({ x = -35, y = 0, relative = true }))
+hl.bind("SUPER + SHIFT + L", hl.dsp.window.resize({ x = 35, y = 0, relative = true }))
 hl.bind("SUPER + V", hl.dsp.window.float({}))
 hl.bind("SUPER + S", hl.dsp.layout("togglesplit"))
 
 --hl.bind("", hl.dsp)
-
-hl.bind("SUPER + F", hl.dsp.window.fullscreen({ mode = maximized }))
-hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ mode = fullscreen }))
+--TODO: FIX THIS SHIT, FIRST DONT TOGGLE BUT SECOND DOES
+hl.bind("SUPER + F", hl.dsp.window.fullscreen_state({ internal = 1, client = 2 }))
+hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ internal = 2, client = 2 }))
