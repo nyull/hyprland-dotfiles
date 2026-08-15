@@ -1,8 +1,8 @@
 hl.config({
 	general = {
 		border_size = 1,
-		gaps_in = 2,
-		gaps_out = 2,
+		gaps_in = 1,
+		gaps_out = 3,
 		col = {
 			inactive_border = "rgba(0,0,0,1)",
 			active_border = { colors = { "rgba(225,225,225,1)", "rgba(0,0,0,1)" }, angle = 270 },
@@ -13,16 +13,18 @@ hl.config({
 	},
 
 	decoration = {
-		rounding = 3,
-		rounding_power = 2.0,
+		rounding = 4,
+		rounding_power = 3.0,
 		active_opacity = 1,
-		inactive_opacity = 0.95,
+		inactive_opacity = 0.96,
 	},
 
 	dwindle = {
 		preserve_split = true,
 	},
 })
+
+--animation
 
 hl.curve("easeOutQuint", { type = "bezier", points = { { 0.23, 1 }, { 0.32, 1 } } })
 hl.curve("easeOutExpo", { type = "bezier", points = { { 0.16, 1 }, { 0.3, 1 } } })
@@ -33,5 +35,5 @@ hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 hl.curve("easy", { type = "spring", mass = 1, stiffness = 238.1191, dampening = 24.21279333 })
 
 hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "easeOutExpo" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "easeOutExpo", style = "slidevert" })
-hl.animation({ leaf = "windows", enabled = true, speed = 2, bezier = "linear", style = "slide" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 3, bezier = "easeOutExpo", style = "slidefade" })
+hl.animation({ leaf = "windows", enabled = true, speed = 4, bezier = "easeOutExpo", style = "gnomed" })

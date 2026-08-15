@@ -1,4 +1,4 @@
-local filerer = "thunar"
+local filerer = "dolphin"
 local terminal = "kitty"
 local menu = "rofi -show drun"
 
@@ -32,6 +32,5 @@ hl.bind("SUPER + V", hl.dsp.window.float({}))
 hl.bind("SUPER + S", hl.dsp.layout("togglesplit"))
 
 --hl.bind("", hl.dsp)
---TODO: FIX THIS SHIT, FIRST DONT TOGGLE BUT SECOND DOES
-hl.bind("SUPER + F", hl.dsp.window.fullscreen_state({ internal = 1, client = 2 }))
-hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen({ internal = 2, client = 2 }))
+hl.bind("SUPER + F", hl.dsp.window.fullscreen_state({ internal = 1, client = 2, action = "toggle" }))
+hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen_state({ internal = 2, client = 2, action = "toggle" }))
