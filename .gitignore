@@ -7,6 +7,7 @@
 !color
 !README.md
 !hypr/
+!hypr/hyprpaper.conf
 =======
 # Compiled Lua sources
 luac.out
