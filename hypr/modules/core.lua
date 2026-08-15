@@ -1,11 +1,11 @@
 hl.config({
 	general = {
-		border_size = 1,
+		border_size = 2,
 		gaps_in = 1,
-		gaps_out = 3,
+		gaps_out = 2,
 		col = {
-			inactive_border = "rgba(0,0,0,1)",
-			active_border = { colors = { "rgba(225,225,225,1)", "rgba(0,0,0,1)" }, angle = 270 },
+			inactive_border = "rgba(133,138,145,1)",
+			active_border = "rgba(165,140,243,1)",
 		},
 
 		layout = "dwindle",
