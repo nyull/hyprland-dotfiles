@@ -1,0 +1,34 @@
+ * {
+   -ThunarAbstractIconView-row-spacing: 70;
+   -ThunarAbstractIconView-column-spacing: 30;
+ }
+
+ /* Changing the progressbar height */
+ .thunar .disk-space-usage-bar {
+   min-height: 8px;
+ }
+
+ /* Changing the color of progressbars */
+ .thunar .disk-space-usage-bar--normal {
+   background: none;
+   background-color: Green;
+ }
+
+ .thunar .disk-space-usage-bar--warning {
+   background: none;
+   background-color: Purple;
+ }
+
+ .thunar .disk-space-usage-bar--error {
+   background: none;
+   background-color: IndianRed;
+ }
+
+ .thunar,
+ .thunar .toolbar,
+ .thunar .sidebar,
+ .thunar .sidebar .view,
+ .thunar .standard-view,
+ .thunar .standard-view .view {
+   background-color: rgba(255, 255, 255, 1);
+ }
