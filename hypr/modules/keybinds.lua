@@ -2,8 +2,6 @@ local filerer = "dolphin"
 local terminal = "kitty"
 local menu = "rofi -show drun"
 
--- NOTE: For debugging only, comment out otherwise
-hl.bind("SUPER + SHIFT + mouse:272", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + E", hl.dsp.exec_cmd(filerer))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + R", hl.dsp.exec_cmd(menu))
@@ -22,8 +20,8 @@ for i = 1, 10 do -- automates workshop shifting from wrkshp 1 to 10
 	end)
 end
 
-hl.bind("SUPER + mouse:272", hl.dsp.window.resize())
-hl.bind("SUPER + mouse:273", hl.dsp.window.drag())
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize())
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag())
 hl.bind("SUPER + SHIFT + K", hl.dsp.window.resize({ x = 0, y = 35, relative = true }))
 hl.bind("SUPER + SHIFT + J", hl.dsp.window.resize({ x = 0, y = -35, relative = true }))
 hl.bind("SUPER + SHIFT + H", hl.dsp.window.resize({ x = -35, y = 0, relative = true }))
