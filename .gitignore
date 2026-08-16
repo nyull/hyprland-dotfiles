@@ -7,7 +7,7 @@
 !README.md
 !hypr/
 !hypr/hyprpaper.conf
-!gtk-3.0/gtk.css
+!gtk-3.0/**
 # Compiled Lua sources
 luac.out
 
