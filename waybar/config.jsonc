@@ -7,7 +7,6 @@
 
   "modules-right": [
     "pulseaudio",
-    "backlight",
     "battery",
     "network",
     "cpu",
