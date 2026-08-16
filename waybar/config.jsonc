@@ -18,7 +18,7 @@
   ],
 
   "hyprland/workspaces": {
-    "format": "{name}: {icon}",
+    "format": "{name}",
     "format-icons": {
       "active": "",
       "default": ""
@@ -43,7 +43,7 @@
   "clock": {
     "timezone": "Asia/Manila",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format": "{:%d|%m|%Y - (%H)%I:%M:%S|%p}",
+    "format": "{:%d|%b|%Y - (%H)%I:%M:%S|%p}",
     "interval": 1
   },
 

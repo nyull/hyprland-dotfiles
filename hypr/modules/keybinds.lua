@@ -32,5 +32,5 @@ hl.bind("SUPER + V", hl.dsp.window.float({}))
 hl.bind("SUPER + S", hl.dsp.layout("togglesplit"))
 
 --hl.bind("", hl.dsp)
-hl.bind("SUPER + F", hl.dsp.window.fullscreen_state({ internal = 1, client = 2, action = "toggle" }))
-hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen_state({ internal = 2, client = 2, action = "toggle" }))
+hl.bind("SUPER + F", hl.dsp.window.fullscreen_state({ internal = 1, client = 0, action = "toggle" }))
+hl.bind("SUPER + SHIFT + F", hl.dsp.window.fullscreen_state({ internal = 2, client = 0, action = "toggle" }))
