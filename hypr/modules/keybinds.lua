@@ -10,8 +10,13 @@ hl.bind("SUPER + Q", hl.dsp.window.close())
 
 hl.bind("SUPER + K", hl.dsp.focus({ direction = "up" }))
 hl.bind("SUPER + J", hl.dsp.focus({ direction = "down" }))
-hl.bind("SUPER + H", hl.dsp.focus({ direction = "right" }))
-hl.bind("SUPER + L", hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + L", hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + H", hl.dsp.focus({ direction = "left" }))
+
+hl.bind("SUPER + ALT + K", hl.dsp.window.move({ direction = "up" }))
+hl.bind("SUPER + ALT + J", hl.dsp.window.move({ direction = "down" }))
+hl.bind("SUPER + ALT + L", hl.dsp.window.move({ direction = "right" }))
+hl.bind("SUPER + ALT + H", hl.dsp.window.move({ direction = "left" }))
 for i = 1, 10 do -- automates workshop shifting from wrkshp 1 to 10
 	local key = (i % 10)
 	hl.bind("SUPER + SHIFT + " .. key, hl.dsp.window.move({ workspace = i }))
